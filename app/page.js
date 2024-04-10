@@ -106,7 +106,7 @@ export default function Home() {
 
                 {i.map((x) => {
                   return (
-                    <tr>
+                    <tr key={x}>
                       <th>{i.indexOf(x)}</th>
                       <td>{x}</td>
                       <td>{v[i.indexOf(x)]}</td>
