@@ -6,7 +6,7 @@ export default function Home() {
   const [R1, setR1] = useState(0.0);
   const [R2, setR2] = useState(0.0);
   const [n, setn] = useState(0.0);
-  const [Is, setIs] = useState(0.0);
+  const [Is, setIs] = useState(0.000000001);
 
   const [i, setI] = useState([""]);
   const [v, setV] = useState([0]);
@@ -72,6 +72,7 @@ export default function Home() {
         <div>
           <div className="text-xl">Is:</div>
           <input
+            placeholder="0.000000001"
             className="input input-bordered"
             type="text"
             onChange={(e) => {
